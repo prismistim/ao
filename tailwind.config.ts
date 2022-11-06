@@ -3,7 +3,8 @@ import type { Config } from 'tailwindcss'
 export default <Partial<Config>>{
   theme: {
     fontFamily: {
-      sans: ['a-otf-gothic-mb101-pr6n']
+      title: ['futura-pt'],
+      body: ['source-han-sans-cjk-ja']
     }
   }
 }
