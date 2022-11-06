@@ -1,0 +1,13 @@
+services:
+  app:
+    container_name: app
+    build: ./
+    volumes:
+      - node_modules:/app/node_modules
+      - .:/app:cached
+    ports:
+      - 3000:3000
+      - 24678:24678
+    tty: true
+volumes:
+  node_modules:
